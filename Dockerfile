@@ -16,4 +16,4 @@ COPY --from=builder /usr/local/src/ /usr/local/src/
 COPY /src /app/src
 ENV PYTHONPATH=/app
 
-CMD ["uvicorn", "src.main:app", "--host", "", "--port", ""]
+CMD ["uvicorn", "src.main:app"]
